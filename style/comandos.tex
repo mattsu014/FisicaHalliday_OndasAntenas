@@ -1,0 +1,18 @@
+% -------------------------------------------------
+% CONFIGURAÇÕES
+% -------------------------------------------------
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.2cm}
+\setlength{\headheight}{40pt}
+\setlength{\footskip}{30pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\IfFileExists{figures/logo-ufc-horizontal.png}{\includegraphics[height=1cm]{figures/logo-ufc-horizontal.png}}{}}
+\fancyhead[R]{\small\begin{tabular}{r}FUNDAMENTOS DE FÍSICA -- HALLIDAY. 8° EDIÇÃO\end{tabular}}
+\fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\imagemquestao}[1]{%
+    \includegraphics[width=0.55\textwidth]{#1}%
+}
