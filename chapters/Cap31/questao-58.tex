@@ -26,7 +26,257 @@ No instante \(t = 0{,}442\,\text{ms}\), determine:
     \item[(e)] se a soma de \(P_C\), \(P_L\) e \(P_R\) é maior, menor ou igual a \(P_G\).
 \end{enumerate}
 
-\subsubsection{Resolução}
+\subsection*{Resposta}
 
+Dados:
+
+\[
+R = 16,0\,\Omega,
+\qquad
+L = 9,20\times10^{-3}\,\text{H},
+\qquad
+C = 31,2\times10^{-6}\,\text{F}
+\]
+
+\[
+\mathcal{E}(t)=\mathcal{E}_m\sin(\omega t),
+\qquad
+\mathcal{E}_m=45,0\,\text{V},
+\qquad
+\omega=3000\,\text{rad/s}
+\]
+
+\[
+t=0,442\,\text{ms}
+=0,442\times10^{-3}\,\text{s}
+\]
+
+As reatâncias são
+
+\[
+X_L=\omega L
+=(3000)(9,20\times10^{-3})
+=27,6\,\Omega
+\]
+
+\[
+X_C=\frac{1}{\omega C}
+=
+\frac{1}{(3000)(31,2\times10^{-6})}
+=10,68\,\Omega
+\]
+
+A impedância do circuito é
+
+\[
+Z=\sqrt{R^2+(X_L-X_C)^2}
+\]
+
+\[
+Z=\sqrt{16^2+(27,6-10,68)^2}
+\]
+
+\[
+Z=23,29\,\Omega
+\]
+
+O ângulo de fase vale
+
+\[
+\tan\phi=
+\frac{X_L-X_C}{R}
+=
+\frac{16,92}{16}
+\]
+
+\[
+\phi=0,813\,\text{rad}
+\]
+
+A corrente máxima é
+
+\[
+I_m=\frac{\mathcal{E}_m}{Z}
+=
+\frac{45}{23,29}
+=
+1,93\,\text{A}
+\]
+
+Calculando
+
+\[
+\omega t
+=
+(3000)(0,442\times10^{-3})
+=
+1,326\,\text{rad}
+\]
+
+a corrente instantânea é
+
+\[
+i(t)
+=
+I_m\sin(\omega t-\phi)
+\]
+
+\[
+i
+=
+1,93\sin(1,326-0,813)
+=
+0,947\,\text{A}
+\]
+
+e a tensão do gerador no instante considerado é
+
+\[
+\mathcal{E}
+=
+45\sin(1,326)
+=
+43,67\,\text{V}
+\]
+
+\subsubsection*{(a) Potência fornecida pelo gerador}
+
+\[
+P_G
+=
+\mathcal{E}\,i
+\]
+
+\[
+P_G
+=
+(43,67)(0,947)
+\]
+
+\[
+\boxed{P_G=41,4\,\text{W}}
+\]
+
+\subsubsection*{(b) Taxa de variação da energia no capacitor}
+
+A amplitude da tensão no capacitor é
+
+\[
+V_{Cm}=I_mX_C
+=(1,93)(10,68)
+=20,64\,\text{V}
+\]
+
+Logo,
+
+\[
+v_C
+=
+20,64
+\sin\!\left(
+1,326-0,813-\frac{\pi}{2}
+\right)
+=
+-17,98\,\text{V}
+\]
+
+Portanto,
+
+\[
+P_C=v_C\,i
+\]
+
+\[
+P_C
+=
+(-17,98)(0,947)
+\]
+
+\[
+\boxed{P_C=-17,0\,\text{W}}
+\]
+
+\subsubsection*{(c) Taxa de variação da energia no indutor}
+
+A amplitude da tensão no indutor é
+
+\[
+V_{Lm}
+=
+I_mX_L
+=
+(1,93)(27,6)
+=
+53,3\,\text{V}
+\]
+
+Assim,
+
+\[
+v_L
+=
+53,3
+\sin\!\left(
+1,326-0,813+\frac{\pi}{2}
+\right)
+=
+46,4\,\text{V}
+\]
+
+e
+
+\[
+P_L=v_L\,i
+\]
+
+\[
+P_L
+=
+(46,4)(0,947)
+\]
+
+\[
+\boxed{P_L=43,9\,\text{W}}
+\]
+
+\subsubsection*{(d) Potência dissipada no resistor}
+
+\[
+P_R=i^2R
+\]
+
+\[
+P_R=(0,947)^2(16)
+\]
+
+\[
+\boxed{P_R=14,4\,\text{W}}
+\]
+
+\subsubsection*{(e) Comparação entre as potências}
+
+\[
+P_C+P_L+P_R
+=
+-17,0+43,9+14,4
+=
+41,3\,\text{W}
+\]
+
+enquanto
+
+\[
+P_G=41,4\,\text{W}
+\]
+
+A pequena diferença decorre dos arredondamentos efetuados. Portanto,
+
+\[
+\boxed{
+P_G=P_C+P_L+P_R
+}
+\]
+
+confirmando a conservação de energia no circuito.
 
 \vspace{1cm}

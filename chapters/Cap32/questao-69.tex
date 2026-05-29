@@ -26,5 +26,92 @@ Determine o módulo do campo magnético a uma distância radial
 
 \subsubsection{Resolução}
 
+Entre as placas,
+
+\[
+E=\frac{V}{d}.
+\]
+
+Como
+
+\[
+V=(100\,\text{V})e^{-t/\tau},
+\]
+
+temos
+
+\[
+E=\frac{100}{d}e^{-t/\tau}.
+\]
+
+Pela lei de Ampere-Maxwell,
+
+\[
+B(2\pi r)=\mu_0\epsilon_0\frac{d\Phi_E}{dt}.
+\]
+
+Para \(r<R\), o fluxo envolvido é
+
+\[
+\Phi_E=E(\pi r^2).
+\]
+
+Logo,
+
+\[
+B(2\pi r)=\mu_0\epsilon_0\pi r^2
+\left|\frac{dE}{dt}\right|.
+\]
+
+Assim,
+
+\[
+B=\frac{\mu_0\epsilon_0 r}{2}
+\left|\frac{dE}{dt}\right|.
+\]
+
+Como
+
+\[
+\left|\frac{dE}{dt}\right|
+=
+\frac{100}{d\tau}e^{-t/\tau},
+\]
+
+obtemos
+
+\[
+B(t)=
+\frac{\mu_0\epsilon_0 r}{2}
+\frac{100}{d\tau}e^{-t/\tau}.
+\]
+
+\begin{enumerate}
+    \item[(a)] Como \(r=0{,}80R=0{,}80(16\,\text{mm})=12{,}8\,\text{mm}\),
+
+    \[
+    B(t)=
+    \frac{(4\pi\times 10^{-7})(8{,}85\times 10^{-12})
+    (12{,}8\times 10^{-3})}{2}
+    \frac{100}{(5{,}0\times 10^{-3})(12\times 10^{-3})}
+    e^{-t/\tau}.
+    \]
+
+    Portanto,
+
+    \[
+    B(t)=
+    (1{,}19\times 10^{-13})e^{-t/\tau}\,\text{T}.
+    \]
+
+    \item[(b)] Para \(t=3\tau\),
+
+    \[
+    B(3\tau)=
+    (1{,}19\times 10^{-13})e^{-3}
+    =
+    5{,}91\times 10^{-15}\,\text{T}.
+    \]
+\end{enumerate}
 
 \vspace{1cm}

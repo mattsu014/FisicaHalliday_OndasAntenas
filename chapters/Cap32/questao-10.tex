@@ -23,5 +23,68 @@ Determine o módulo do campo magnético induzido a uma distância radial
 
 \subsubsection{Resolução}
 
+***
+Usamos a lei de Ampere-Maxwell:
+
+\[
+\oint \vec{B}\cdot d\vec{s}
+=
+\mu_0\epsilon_0\frac{d\Phi_E}{dt}.
+\]
+
+Por simetria, o campo magnético induzido é tangente a uma circunferência de
+raio \(r\), logo
+
+\[
+B(2\pi r)=\mu_0\epsilon_0\frac{d\Phi_{E,\text{env}}}{dt}.
+\]
+
+\begin{enumerate}
+    \item[(a)] Para \(r=2{,}00\,\text{cm}<R\),
+
+    \[
+    \frac{d\Phi_{E,\text{env}}}{dt}
+    =
+    (0{,}600)\frac{r}{R}.
+    \]
+
+    Assim,
+
+    \[
+    B=
+    \frac{\mu_0\epsilon_0(0{,}600)(r/R)}{2\pi r}
+    =
+    \frac{\mu_0\epsilon_0(0{,}600)}{2\pi R}.
+    \]
+
+    Com \(R=3{,}00\,\text{cm}=3{,}00\times 10^{-2}\,\text{m}\),
+
+    \[
+    B=3{,}54\times 10^{-17}\,\text{T}.
+    \]
+
+    \item[(b)] Para \(r=5{,}00\,\text{cm}>R\), o fluxo envolvido é o fluxo
+    total da região circular:
+
+    \[
+    \frac{d\Phi_E}{dt}=0{,}600.
+    \]
+
+    Portanto,
+
+    \[
+    B=
+    \frac{\mu_0\epsilon_0(0{,}600)}{2\pi r}
+    =
+    \frac{(4\pi\times 10^{-7})(8{,}85\times 10^{-12})(0{,}600)}
+    {2\pi(5{,}00\times 10^{-2})}.
+    \]
+
+    Logo,
+
+    \[
+    B=2{,}13\times 10^{-17}\,\text{T}.
+    \]
+\end{enumerate}
 
 \vspace{1cm}

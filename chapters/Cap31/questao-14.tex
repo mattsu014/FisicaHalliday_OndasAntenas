@@ -6,6 +6,128 @@ Um indutor é ligado a um capacitor cuja capacitância pode ser ajustada atravé
 
 
 \subsubsection{Resolução}
+\section*{Resolução}
 
+A frequência de ressonância de um circuito LC é dada por
 
+\[
+f=\frac{1}{2\pi\sqrt{LC}}.
+\]
+
+Deseja-se que a frequência varie linearmente com o ângulo de rotação \(\theta\), de modo que
+
+\[
+f(0^\circ)=2\times10^5\ \text{Hz}
+\]
+
+e
+
+\[
+f(180^\circ)=4\times10^5\ \text{Hz}.
+\]
+
+Como a dependência é linear, escrevemos
+
+\[
+f(\theta)=a\theta+b.
+\]
+
+O coeficiente angular é
+
+\[
+a=\frac{4\times10^5-2\times10^5}{180}
+=\frac{2\times10^5}{180}.
+\]
+
+Como \(f(0)=2\times10^5\), temos
+
+\[
+b=2\times10^5.
+\]
+
+Portanto,
+
+\[
+f(\theta)=2\times10^5+\frac{2\times10^5}{180}\theta,
+\]
+
+ou, de forma equivalente,
+
+\[
+f(\theta)=2\times10^5\left(1+\frac{\theta}{180}\right).
+\]
+
+Agora isolamos a capacitância na expressão da frequência:
+
+\[
+f=\frac{1}{2\pi\sqrt{LC}}
+\]
+
+\[
+f^2=\frac{1}{4\pi^2LC}
+\]
+
+\[
+C=\frac{1}{4\pi^2Lf^2}.
+\]
+
+Substituindo \(L=1,0\,\text{mH}=10^{-3}\,\text{H}\), obtemos
+
+\[
+C(\theta)=
+\frac{1}
+{4\pi^2(10^{-3})[f(\theta)]^2}.
+\]
+
+Finalmente, substituindo a expressão de \(f(\theta)\),
+
+\[
+\boxed{
+C(\theta)=
+\frac{1}
+{4\pi^2(10^{-3})
+\left[
+2\times10^5
+\left(1+\frac{\theta}{180}\right)
+\right]^2}
+}.
+\]
+
+Para verificar os extremos:
+
+\paragraph{Para \(\theta=0^\circ\):}
+
+\[
+f=2\times10^5\ \text{Hz}
+\]
+
+\[
+C(0)=
+\frac{1}
+{4\pi^2(10^{-3})(2\times10^5)^2}
+\]
+
+\[
+C(0)\approx6.33\times10^{-10}\,\text{F}
+=633\,\text{pF}.
+\]
+
+\paragraph{Para \(\theta=180^\circ\):}
+
+\[
+f=4\times10^5\ \text{Hz}
+\]
+
+\[
+C(180)=
+\frac{1}
+{4\pi^2(10^{-3})(4\times10^5)^2}
+\]
+
+\[
+C(180)\approx1.58\times10^{-10}\,\text{F}
+=158\,\text{pF}.
+\]
+
+Logo, a capacitância decresce de aproximadamente \(633\,\text{pF}\) para \(158\,\text{pF}\) à medida que o botão gira de \(0^\circ\) a \(180^\circ\).
 \vspace{1cm}

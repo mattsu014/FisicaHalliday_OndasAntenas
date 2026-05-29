@@ -2,17 +2,185 @@
 
 \subsubsection{Enunciado}
 
-Em um circuito \(LC\) oscilante, \(L = 3{,}00\,\text{mH}\) e \(C = 2{,}70\,\mu\text{F}\). No instante \(t = 0\) a carga do capacitor é zero e a corrente é \(2{,}00\,\text{A}\).
+Em um circuito \(LC\) oscilante, \(L = 3{,}00\,\mathrm{mH}\) e
+\(C = 2{,}70\,\mu\mathrm{F}\). No instante \(t = 0\), a carga do capacitor é zero e a corrente é \(2{,}00\,\mathrm{A}\).
 
 \begin{enumerate}
     \item[(a)] Qual é a carga máxima do capacitor?
-    
+
     \item[(b)] Em que instante de tempo \(t > 0\) a taxa com a qual a energia é armazenada no capacitor é máxima pela primeira vez?
-    
+
     \item[(c)] Qual é o valor dessa taxa?
 \end{enumerate}
 
-\subsubsection{Resolução}
+\paragraph{Resolução}
 
+A frequência angular de um circuito \(LC\) é
+
+\[
+\omega=\frac{1}{\sqrt{LC}}.
+\]
+
+Substituindo os valores fornecidos,
+
+\[
+\omega
+=
+\frac{1}
+{\sqrt{(3,00\times10^{-3})(2,70\times10^{-6})}}
+=
+1,11\times10^{4}\,\mathrm{rad/s}.
+\]
+
+Como \(q(0)=0\) e \(i(0)=2,00\,\mathrm{A}\), a carga e a corrente podem ser escritas como
+
+\[
+q(t)=Q_{\max}\sin(\omega t),
+\]
+
+\[
+i(t)=\omega Q_{\max}\cos(\omega t).
+\]
+
+No instante \(t=0\),
+
+\[
+i(0)=I_{\max}=\omega Q_{\max},
+\]
+
+logo,
+
+\[
+Q_{\max}
+=
+\frac{I_{\max}}{\omega}
+=
+\frac{2,00}{1,11\times10^{4}}
+=
+1,80\times10^{-4}\,\mathrm{C}.
+\]
+
+Portanto,
+
+\[
+\boxed{Q_{\max}=1,80\times10^{-4}\,\mathrm{C}
+=180\,\mu\mathrm{C}}.
+\]
+
+A energia armazenada no capacitor é
+
+\[
+U_C=\frac{q^2}{2C}.
+\]
+
+Assim,
+
+\[
+\frac{dU_C}{dt}
+=
+\frac{q}{C}\frac{dq}{dt}
+=
+\frac{qi}{C}.
+\]
+
+Substituindo as expressões de \(q(t)\) e \(i(t)\),
+
+\[
+\frac{dU_C}{dt}
+=
+\frac{\omega Q_{\max}^{2}}{C}
+\sin(\omega t)\cos(\omega t).
+\]
+
+Utilizando a identidade trigonométrica
+
+\[
+\sin x\,\cos x
+=
+\frac{1}{2}\sin(2x),
+\]
+
+obtém-se
+
+\[
+\frac{dU_C}{dt}
+=
+\frac{\omega Q_{\max}^{2}}{2C}
+\sin(2\omega t).
+\]
+
+O valor máximo ocorre quando
+
+\[
+\sin(2\omega t)=1,
+\]
+
+ou seja,
+
+\[
+2\omega t=\frac{\pi}{2}.
+\]
+
+Portanto,
+
+\[
+t
+=
+\frac{\pi}{4\omega}
+=
+\frac{\pi}{4(1,11\times10^{4})}
+=
+7,07\times10^{-5}\,\mathrm{s}.
+\]
+
+Assim,
+
+\[
+\boxed{
+t=7,07\times10^{-5}\,\mathrm{s}
+=
+70,7\,\mu\mathrm{s}
+}.
+\]
+
+Nesse instante, a taxa máxima de armazenamento de energia é
+
+\[
+\left(\frac{dU_C}{dt}\right)_{\max}
+=
+\frac{\omega Q_{\max}^{2}}{2C}.
+\]
+
+Substituindo os valores numéricos,
+
+\[
+\left(\frac{dU_C}{dt}\right)_{\max}
+=
+\frac{(1,11\times10^{4})
+      (1,80\times10^{-4})^{2}}
+     {2(2,70\times10^{-6})}
+=
+66,7\,\mathrm{W}.
+\]
+
+Portanto,
+
+\[
+\boxed{
+\left(\frac{dU_C}{dt}\right)_{\max}
+=
+66,7\,\mathrm{W}
+}.
+\]
+
+\[
+\boxed{
+\begin{aligned}
+(a)\;&Q_{\max}=1,80\times10^{-4}\,\mathrm{C}=180\,\mu\mathrm{C},\\[2mm]
+(b)\;&t=7,07\times10^{-5}\,\mathrm{s}=70,7\,\mu\mathrm{s},\\[2mm]
+(c)\;&\left(\frac{dU_C}{dt}\right)_{\max}=66,7\,\mathrm{W}.
+\end{aligned}
+}
+\]
 
 \vspace{1cm}
